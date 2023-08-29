@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+* {
+  font-family: "Jua", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  position: relative;
+  min-width: 800px;
+  max-width: 1200px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  @media (min-width: 640px) {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+/* INPUTCONTENT */
+
+.inputbox {
+  background-color: blanchedalmond;
+  border-radius: 20px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.titleinput {
+  margin: 30px;
+  padding: 20px;
+}
+
+.contentinput {
+  margin: 0 30px 0 0;
+}
+
+/* TODOITEM */
+
+.todo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 50px;
+  border: 3px solid lightblue;
+  margin-bottom: 10px;
+}
+
+.todo-item {
+  display: flex;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* TODOLIST */
+
+.todolist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: cadetblue;
+}
+
+.btn1 {
+  margin: 0 20px;
 }
