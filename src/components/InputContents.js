@@ -5,36 +5,39 @@ function InputContents(props) {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const addItem = () => {
+    if (title.length === 0 || content.length === 0) {
+      alert("제목 또는 내용을 입력해주세요!");
+      return;
+    }
     const todo = { id: Date.now(), title: title, body: content, isDone: false };
     props.setTodoList([...props.todoList, todo]);
-  };
-
-  const [text, setText] = useState("");
-  // 초기화
-  const onReset = () => {
-    setText("");
+    setTitle("");
+    setContent("");
   };
 
   const handleReset = () => {};
   return (
     <div className="inputbox">
       <label class="form-label" className="titleinput">
-        제목
-        <input
-          value={title}
-          type="text"
-          onChange={(event) => setTitle(event.target.value)}
-        />
+        제목{" "}
       </label>
+      <input
+        value={title}
+        type="text"
+        onChange={(event) => setTitle(event.target.value)}
+      />
       <label class="form-label" className="contentinput">
         내용
-        <input
-          value={content}
-          type="text"
-          onChange={(event) => setContent(event.target.value)}
-        />
       </label>
-      <button onClick={addItem}>추가</button>
+      <input
+        value={content}
+        type="text"
+        onChange={(event) => setContent(event.target.value)}
+      />
+
+      <button onClick={addItem} className="addbtn">
+        추가
+      </button>
     </div>
   );
 }

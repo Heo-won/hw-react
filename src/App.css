@@ -3,31 +3,29 @@
 * {
   font-family: "Jua", sans-serif;
 }
+/* HEADER */
+.header {
+}
 
+.headerTitle {
+  margin-bottom: 20px;
+  color: #96b6c5;
+}
 .container {
   position: relative;
-  min-width: 800px;
-  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
-  @media (min-width: 640px) {
-    padding-left: 64px;
-    padding-right: 64px;
-  }
+  min-width: 800px;
+  max-width: 1200px;
 }
 
 /* INPUTCONTENT */
-
 .inputbox {
   background-color: blanchedalmond;
   border-radius: 20px;
-  width: 100%;
+  width: 80%;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -35,43 +33,113 @@
 }
 
 .titleinput {
-  margin: 30px;
   padding: 20px;
 }
 
 .contentinput {
-  margin: 0 30px 0 0;
+  margin: 20px;
 }
 
 /* TODOITEM */
 
 .todo-item {
+  display: inline-block;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 250px;
+  height: 150px;
+  border: 3px solid #adc4ce;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.todoitem {
+  display: flex;
+}
+
+.addbtn {
+  margin-left: 30px;
+  width: 50px;
+  background-color: rgb(249, 249, 249);
+  border: 2px solid #c8c8c8;
+  color: black;
+}
+
+.addbtn:hover {
+  border: 3px solid #c8c8c8;
+  cursor: pointer;
+}
+/* TODOLIST */
+
+.workingtitle {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  height: 50px;
-  border: 3px solid lightblue;
-  margin-bottom: 10px;
+  color: #96b6c5;
+  margin: 30px 0;
 }
 
-.todo-item {
-  display: flex;
-}
 .title {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 30px;
 }
-/* TODOLIST */
-
-.todolist {
+.body {
   display: flex;
+  height: 50px;
   justify-content: center;
   align-items: center;
-  color: cadetblue;
+  margin-bottom: 10px;
+}
+
+.btncontainer {
+  position: relative;
+  height: 50px;
 }
 
 .btn1 {
-  margin: 0 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  margin: 0 10px;
+  padding: 5px;
+  background-color: #ffffff;
+  border: 1.5px solid #afbcc0;
+}
+.btn2 {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  padding: 20px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #ffffff;
+  border: 1.5px solid #afbcc0;
+}
+
+.btn1:hover {
+  margin: 0 10px;
+  padding: 5px;
+  background-color: #ffffff;
+  border: 2px solid #afbcc0;
+}
+.btn2:hover {
+  padding: 5px;
+  background-color: #ffffff;
+  border: 2px solid #afbcc0;
+}
+
+/* DONEBOARD */
+.donetitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #96b6c5;
+  margin: 30px 0;
 }
