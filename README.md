@@ -1,6 +1,6 @@
-Components = 
-    DoneBoard 
-    Header
-    InputContents
-    TodoItem
-    WorkingBoard
+**Components = 
+    **DoneBoard 
+    **Header
+    **InputContents
+    **TodoItem
+    **WorkingBoard
